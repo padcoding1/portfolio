@@ -4,7 +4,7 @@
 	"version": "0.0.0",
 	"homepage": "https://https://padcoding1.github.io/portfolio/",
 	"type": "module",
-	"scripts": {git ad
+	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
 		"lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
