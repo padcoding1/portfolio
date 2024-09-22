@@ -45,10 +45,7 @@ import virtuance from "./company/virtuance.png";
 import surelock from "./projects/surelock1.png";
 import growapp from "./projects/growapp.png";
 import catcollector from "./projects/catcollector.png";
-import math from "./projects/math-magicians.png";
-import movie from "./projects/movie-metro.png";
-import nyeusi from "./projects/nyeusi.png";
-import space from "./projects/space-hub.png";
+import peakpartner from "./projects/peakpartner.png";
 
 export {
 	bwmap,
@@ -78,10 +75,7 @@ export {
 	reactjs,
 	tailwind,
 	typescript,
-	math,
-	movie,
-	nyeusi,
-	space,
+	peakpartner,
 	dell,
 	vandelay,
 	gkhouses,

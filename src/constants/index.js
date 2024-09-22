@@ -13,7 +13,7 @@ import {
 	surelock,
 	growapp,
 	catcollector,
-	movie,
+	peakpartner,
 	dell,
 	vandelay,
 	gkhouses,
@@ -227,8 +227,8 @@ const projects = [
 	},
 	{
 		id: "project-4",
-		name: "Movie Metro",
-		description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+		name: "PeakPartner",
+		description: `PeakPartner is a full-stack app where climbers and expedition leaders can plan and join expeditions, with leaders creating trips and managing participants, while climbers sign up and track their next adventure!`,
 		tags: [
 			{
 				name: "nextjs",
@@ -243,8 +243,8 @@ const projects = [
 				color: "pink-text-gradient",
 			},
 		],
-		image: movie,
-		repo: "https://github.com/shaqdeff/Movie-Metro",
+		image: peakpartner,
+		repo: "https://github.com/padcoding1/peakpartner-men-stack-crud-app-project2",
 		demo: "http://localhost:5173/#projects",
 	},
 ];
