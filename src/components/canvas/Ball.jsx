@@ -7,14 +7,15 @@ import {
 	Preload,
 	useTexture,
 } from "@react-three/drei";
+import { isMobile } from "react-device-detect";
 
 const Ball = (props) => {
 	const [decal] = useTexture([props.imgUrl]);
 
 	return (
 		<>
-			<OrbitControls enableZoom={false} position0={0} />
-			<Float speed={5} rotationIntensity={1} floatIntensity={2}>
+			{!isMobile && <OrbitControls enableZoom={false} />}
+			<Float speed={isMobile ? 2 : 5} rotationIntensity={isMobile ? 0.5 : 1} floatIntensity={isMobile ? 1 : 2}>
 				{/* Group the ball and lights together, and move them higher by setting the position */}
 				<group position={[0, 0.7, 0]}>
 					{" "}
@@ -22,11 +23,11 @@ const Ball = (props) => {
 					<ambientLight intensity={0.25} />
 					<directionalLight position={[-1, -0.75, .55]} />
 					<mesh castShadow receiveShadow scale={2.2}>
-						<icosahedronGeometry args={[1, 2]} />
+						<icosahedronGeometry args={[1, isMobile ? 0 : 1]} />
 						<meshStandardMaterial
 							color="#3d3d3d"
 							polygonOffset
-							polygonOffsetFactor={-5}
+							polygonOffsetFactor={5}
 							flatShading
 						/>
 						<Decal
