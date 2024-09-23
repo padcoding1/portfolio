@@ -63,7 +63,7 @@ const services = [
 		icon: backend,
 	},
 ];
-const languages = [
+const technologies = [
 	{
 		name: "JS/HTML/CSS",
 		icon: javascript,
@@ -84,8 +84,6 @@ const languages = [
 		name: "TypeScript",
 		icon: typescript,
 	},
-];
-const othertech = [
 	{
 		name: "React",
 		icon: reactjs,
@@ -249,4 +247,4 @@ const projects = [
 	},
 ];
 
-export { services, languages, othertech, experiences, projects };
+export { services, technologies, experiences, projects };
