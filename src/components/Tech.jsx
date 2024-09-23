@@ -21,7 +21,7 @@ const TechBalls = ({ techs }) => {
     <div ref={ref} className="flex flex-wrap justify-center mt-8">
     {inView &&
       techs.map((tech, index) => (
-        <div key={tech.name} className="w-[170px] h-[130px] gap-4"> {/* Increased height of the container */}
+        <div key={tech.name} className="w-[170px] h-[130px] mt-5"> {/* Increased height of the container */}
           <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
             <Suspense fallback={<Loader />}>
               <Ball imgUrl={tech.icon} /> {/* Moved ball slightly up */}
@@ -29,8 +29,7 @@ const TechBalls = ({ techs }) => {
                 position={[0, -3.5, 0]} // Moved text further down to create more gap
                 fontSize={1.2} // Adjust font size for responsive display
                 lineHeight={1.2}
-                color="#858585" // Slightly gray color
-                fontWeight="bold" // Bold font
+                color="lightgray" // Slightly gray color
                 anchorY="bottom"
               >
                 {tech.name}

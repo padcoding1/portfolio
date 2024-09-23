@@ -35,8 +35,12 @@
 }
 
 @font-face {
-	font-family: "hosp";
-	src: url("./fonts/hosp.ttf");
+	font-family: "Poppins-Black";
+	src: url("./fonts/Poppins-Black.ttf");
+}
+@font-face {
+	font-family: "Poppins-Bold";
+	src: url("./fonts/Poppins-Bold.ttf");
 }
 
 * {
