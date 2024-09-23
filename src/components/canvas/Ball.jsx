@@ -8,6 +8,7 @@ import {
   useTexture,
 } from '@react-three/drei';
 import Loader from '../Loader';
+import { useInView } from 'react-intersection-observer';
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
@@ -37,15 +38,23 @@ const Ball = (props) => {
 };
 
 const BallCanvas = ({ icon }) => {
-  return (
-    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
-      <Suspense fallback={<Loader />}>
-        <OrbitControls enableZoom={false} position0={0} />
-        <Ball imgUrl={icon} />
-      </Suspense>
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Only load once when it comes into view
+    threshold: 0.1, // Load when 10% of the component is visible
+  });
 
-      <Preload all />
-    </Canvas>
+  return (
+    <div ref={ref}>
+      {inView && (
+        <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
+          <Suspense fallback={<Loader />}>
+            <OrbitControls enableZoom={false} position0={0} />
+            <Ball imgUrl={icon} />
+          </Suspense>
+          <Preload all />
+        </Canvas>
+      )}
+    </div>
   );
 };
 
