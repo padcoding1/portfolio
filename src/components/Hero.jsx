@@ -23,39 +23,40 @@ const Hero = () => {
 			</div>
 			<section
 				className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
-        sm:bg-hero bg-hero-mobile overflow-hidden"
+         sm:bg-hero bg-hero-mobile overflow-hidden"
 			>
 				<div
-					className={`absolute inset-0 sm:top-[100px] top-[150px] 
-          lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
+					className={`absolute inset-0 sm:top-[100px] top-[90px] 
+          lg:top-[150px] xl:top-[180px] 2xl:-left-[350px] pl-10
           max-w-7xl mx-auto flex flex-row items-start
           justify-between gap-3`}
 				>
-					<div className="flex flex-col justify-center items-center mt-5 ml-3">
-						<div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
-						<div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
-					</div>
-
 					<div>
 						<h1
-							className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}
-						>
+							className={`font-black text-eerieBlack  
+								2xl:text-[140px] xl:text-[100px] lg:text-[100px] sm:text-[75px] xs:text-[60px] 
+								text-[80px] 
+								leading-[0.8em] text-eerieBlack font-poppins uppercase`}>
 							Philip Dillon{" "}
 							<p
-								className="sm:text-orange sm:text-[55px] 
-                text-eerieBlack text-[50px] font-roadrage
-            	uppercase leading-none -mt-3 tracking-widest text-shadow-solid-2 drop-shadow-glow
+								className="text-orange text-[45px] lg:text-[55px] sm:text-[30px] 
+                text-eerieBlack font-roadrage
+            	uppercase leading-[1em] -mt-2 tracking-widest text-shadow-solid-2 drop-shadow-glow
                 "
 							>
 								Software<br></br>
-                Developer
+								Developer
 							</p>
 						</h1>
-						<p className={`${styles.heroSubText} mt-2 text-eerieBlack font-poppins uppercase font-black`}>
+						<p
+							className={`text-eerieBlack lg:text-[30px] sm:text-[26px] xs:text-[20px] 
+								text-[26px] lg:leading-[40px] mt-5 text-eerieBlack 
+								font-poppins uppercase font-black`}
+						>
 							{/* Software Developer <br className="sm:block hidden" /> */}
 							Delightful.<br></br>
-               Dynamic.<br></br>
-                Driven.
+							Dynamic.<br></br>
+							Driven.
 						</p>
 					</div>
 					<div
@@ -94,8 +95,8 @@ const Hero = () => {
 				{/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
 				<div>
 					<img
-						className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[65vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
+						className="absolute bottom-0 ml-[0vw] 
+            2xl:ml-[55vw] lg:ml-[65vw] md:ml-[60vw] xmd:ml-[60vw] sm:ml-[10vw]
             sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
 						src={headshot}
 						alt="A profile picture of Philip Dillon"

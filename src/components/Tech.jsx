@@ -18,7 +18,7 @@ const TechCatBalls = ({ techCats, onBallClick }) => {
   });
 
   return (
-    <div ref={ref} className="flex flex-wrap justify-center mt-8">
+    <div ref={ref} className="h-[50vh] flex flex-wrap justify-center mt-8">
       {inView &&
         techCats.map((cat, index) => (
           <div

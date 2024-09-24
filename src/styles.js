@@ -13,18 +13,14 @@ const styles = {
 	flexEnd: "flex justify-end",
 	navPadding: "pt-[98px]",
 
-	paddingX: "sm:px-16 px-6",
+	paddingX: "",
 	paddingY: "sm:py-16 py-6",
 	padding: "sm:px-16 px-6 sm:py-16 py-10",
 
-	heroHeadText:
-		"font-black text-eerieBlack lg:text-[100px] sm:text-[75px] xs:text-[60px] text-[50px] lg:leading-[80px] mt-2",
-	heroSubText:
-		"text-eerieBlack lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
 	sectionHeadText:
 		"text-eerieBlack font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins",
   sectionHeadTextSmall:
-		"text-eerieBlack font-black md:text-[40px] sm:text-[28px] xs:text-[20px] text-[10px] font-poppins",
+		"text-eerieBlack font-black 2xl:text-[50px] xl:text-[52px] md:text-[40px] sm:text-[28px] xs:text-[20px] text-[10px] font-poppins",
 	sectionHeadTextLight:
 		"text-timberWolf font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins",
 	sectionSubText:

@@ -9,7 +9,7 @@ const ServiceCard = ({ index, title, icon }) => {
 	return (
 		<motion.div
 			variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-			className="xs:w-[200px] w-full card-gradient p-[1px] rounded-[20px] shadow-card"
+			className="2xl:w-[290px] xs:w-[200px] w-full card-gradient p-[1px] rounded-[20px] shadow-card 2xl:mt-[4rem]"
 		>
 			<div
 				options={{
@@ -17,10 +17,10 @@ const ServiceCard = ({ index, title, icon }) => {
 					scale: 1,
 					speed: 450,
 				}}
-				className="bg-jetLight rounded-[20px] py-5 px-1 min-h-[200px] flex justify-evenly items-center flex-col"
+				className="2xl:h-[300px] bg-jetLight rounded-[20px] py-5 px-1 min-h-[200px] flex justify-evenly items-center flex-col"
 			>
 				<img src={icon} alt={title} className="w-16 h-16 object-contain" />
-				<h3 className="text-orange text-[18px] font-bold text-center">
+				<h3 className="text-orange 2xl:text-[24px] xl:text-[20px] text-[18px] font-bold text-center">
 					{title}
 				</h3>
 			</div>
@@ -30,14 +30,14 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
 	return (
-		<div className="-mt-[8rem]">
+		<div className="2xl:mt-[8rem] xl:-mt-[1rem] -mt-[8rem] 2xl:w-[100vw]">
 			<motion.div variants={textVariant()}>
 				<h2 className={styles.sectionHeadTextSmall}>Hi, I'm Philip!</h2>
 			</motion.div>
 
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
-				className="mt-4 text-taupe text-[18px] max-w-3xl leading-[25px]"
+				className="2xl:mt-10 mt-4 text-taupe 2xl:text-[28px] text-[18px] max-w-4xl leading-[25px] "
 			>
 				Whether it’s front-end, back-end, or full-stack, there’s nothing
 				quite like the rush of writing code, running it, and watching

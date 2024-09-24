@@ -18,7 +18,7 @@ const App = () => {
           <Hero />
         </div>
 
-        <div className="bg-about bg-cover bg-center bg-no-repeat">
+        <div className="bg-about bg-cover bg-center bg-no-repeat h-[100vh]">
           <About />
         </div>
 
