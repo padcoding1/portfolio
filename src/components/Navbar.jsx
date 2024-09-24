@@ -11,7 +11,7 @@ const Navbar = () => {
 	return (
 		<nav
 			className={`${styles.paddingX} w-full flex items-center py-2 fixed 
-      top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}
+      bottom-0 lg:top-0 z-20 bg-flashWhite sm:opacity-[0.97] lg:h-[80px] xxs:h-[12vh]`}
 		>
 			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
 				<Link
@@ -27,6 +27,7 @@ const Navbar = () => {
 						alt="logo"
 						className="sm:w-[80px] sm:h-[80px] w-[50px] h-[50px] object-contain"
 					/>
+          
 				</Link>
 				<ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
 					{navLinks.map((nav) => (
@@ -47,42 +48,46 @@ const Navbar = () => {
 				<div className="sm:hidden flex flex-1 w-screen justify-end items-center">
 					{toggle ? (
 						<div
-							className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
+							className={`bg-flashWhite fixed 
+                bottom-12 left-0 h-[40vh] w-screen z-30 opacity-[0.85] menu ${
 							toggle ? "menu-open" : "menu-close"
 						}`}
 						>
-							<div className="flex justify-end">
-								<img
-									src={close}
-									alt="close"
-									className="w-[22px] h-[22px] object-contain cursor-pointer"
-									onClick={() => setToggle(!toggle)}
-								/>
-							</div>
+
+              {/* Open Mobile Menu */}
+							
+
 							<ul
-								className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]"
+								className="text-[45px] list-none items-start justify-end mt-[0rem]"
 							>
 								{navLinks.map((nav) => (
 									<li
-										id={nav.id}
-										key={nav.id}
-										className={`${
-											active === nav.title
-												? "text-french"
+										
+										className={`pl-10 pr-10 font-bold font-mova 
+                      uppercase tracking-[1px] cursor-pointer
+                      ${ active === nav.title
+												? "text-orange"
 												: "text-eerieBlack"
-										} text-[88px] font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+										}`}
 										onClick={() => {
 											setToggle(!toggle);
 											setActive(nav.title);
 										}}
+                    id={nav.id}
+										key={nav.id}
 									>
 										<a href={`#${nav.id}`}>{nav.title}</a>
 									</li>
 								))}
 							</ul>
+              <div className="flex justify-end w-full absolute right-7 -bottom-7">
+								<img
+									src={close}
+									alt="closeMobileMenuButton"
+									className="w-[25px] h-[25px] object-contain cursor-pointer"
+									onClick={() => setToggle(!toggle)}
+								/>
+							</div>
 						</div>
 					) : (
 						<img
