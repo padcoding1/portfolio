@@ -63,62 +63,99 @@ const services = [
 		icon: backend,
 	},
 ];
+const techCategories = [
+  {
+    name: "Languages & Data Formats",
+    icon: reactjs,
+    type: "language",
+  },
+  {
+    name: "Frameworks & Libraries",
+    icon: reactjs,
+    type: "framework",
+  },
+  {
+    name: "Databases, API, & Other",
+    icon: reactjs,
+    type: "database",
+
+  },
+  {
+    name: "Utilities & Tools",
+    icon: reactjs,
+    type: "utility",
+  },
+];
 const technologies = [
 	{
 		name: "JS/HTML/CSS",
 		icon: javascript,
+    type: "language",
 	},
 	{
 		name: "Python",
 		icon: python,
+    type: "language",
 	},
 	{
 		name: "SQL",
 		icon: sql,
+    type: "language",
 	},
 	{
 		name: "JSON",
 		icon: json,
+    type: "language",
 	},
 	{
 		name: "TypeScript",
 		icon: typescript,
+    type: "language",
 	},
 	{
 		name: "React",
 		icon: reactjs,
+    type: "framework",
 	},
 	{
 		name: "Node JS",
 		icon: nodejs,
+    type: "framework",
 	},
 	{
 		name: "Express",
 		icon: express,
+    type: "framework",
 	},
 	{
 		name: "Django",
 		icon: django,
+    type: "framework",
 	},
 	{
 		name: "Flask",
 		icon: flask,
+    type: "framework",
 	},
 	{
 		name: "PostgreSQL",
 		icon: postgresql,
+    type: "database",
 	},
 	{
 		name: "Mongo",
 		icon: mongo,
+    type: "database",
 	},
 	{
 		name: "Tailwind/Bootstrap",
 		icon: tailwind,
+    type: "framework",
 	},
 	{
 		name: "Git/GitHub",
 		icon: github,
+    type: "utility",
 	},
 ];
 
@@ -247,4 +284,4 @@ const projects = [
 	},
 ];
 
-export { services, technologies, experiences, projects };
+export { services, techCategories, technologies, experiences, projects };

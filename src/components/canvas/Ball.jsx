@@ -14,7 +14,7 @@ const Ball = (props) => {
 
 	return (
 		<>
-			{!isMobile && <OrbitControls enableZoom={false} />}
+			{/* {!isMobile && <OrbitControls enableZoom={false} />} */}
 			<Float speed={isMobile ? 2 : 5} rotationIntensity={isMobile ? 0.5 : 1} floatIntensity={isMobile ? 1 : 2}>
 				{/* Group the ball and lights together, and move them higher by setting the position */}
 				<group position={[0, 0.7, 0]}>
