@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { headshot, bwmap, worldmap } from "../assets";
+import React from 'react';
 
 const Hero = () => {
 	return (
