@@ -2,7 +2,7 @@
 	"name": "Philip Dillon",
 	"private": true,
 	"version": "0.0.0",
-	"homepage": "https://padcoding1.github.io/portfolio",
+	"homepage": "https://philip-dillon.com",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
