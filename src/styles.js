@@ -17,13 +17,15 @@ const styles = {
 	paddingY: "md:py-16 py-6",
 	padding: "md:px-16 px-6 md:py-16 py-10",
 
-	heroHeadText:
-		"font-black text-eerieBlack md:text-[100px] md:text-[75px] sm:text-[60px] text-[50px] md:leading-[80px] mt-2",
-	heroSubText:
-		"text-eerieBlack md:text-[30px] md:text-[26px] sm:text-[20px] text-[16px] md:leading-[40px]",
+	heroNameText:
+		"font-black text-eerieBlack lg:text-[100px] xmd:text-[155px] md:text-[115px] sm:text-[80px] text-[70px] mt-2 xl:leading-[5rem] lg:leading-[5rem] xmd:leading-[7.7rem] md:leading-[5.7rem] sm:leading-[4rem] leading-[3.5rem]",
+	heroDevText:
+		"lg:text-[57px] xmd:text-[89px] md:text-[65px] sm:text-[45px] text-[40px] lg:leading-[3.8rem] xmd:leading-[5.5rem] md:leading-[4rem] sm:leading-[2.7rem] leading-[2.7rem]",
+	heroWordsText:
+		"text-eerieBlack lg:text-[33px] xmd:text-[50px] md:text-[36px] sm:text-[28px] text-[25px] lg:leading-[3.67rem] xmd:leading-[5.56rem] md:leading-[4rem] sm:leading-[3rem] leading-[-1]",
 	sectionHeadText:
 		"text-eerieBlack font-black md:text-[60px] md:text-[48px] sm:text-[40px] text-[30px] font-poppins",
-    sectionHeadTextmdall:
+	sectionHeadTextmdall:
 		"text-eerieBlack font-black md:text-[40px] md:text-[28px] sm:text-[20px] text-[10px] font-poppins",
 	sectionHeadTextLight:
 		"text-timberWolf font-black md:text-[60px] md:text-[48px] sm:text-[40px] text-[30px] font-poppins",

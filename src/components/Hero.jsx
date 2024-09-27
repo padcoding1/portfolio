@@ -31,28 +31,25 @@ const Hero = () => {
           max-w-7xl mx-auto flex flex-row items-start
           justify-between gap-3`}
 				>
-				
-
 					<div>
 						<h1
-							className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}
+							className={`${styles.heroNameText} font-poppins uppercase`}
 						>
 							Philip Dillon{" "}
 							<p
-								className="sm:text-orange sm:text-[55px] 
-                text-eerieBlack text-[50px] font-roadrage
-            	uppercase leading-none -mt-3 tracking-widest text-shadow-solid-2 drop-shadow-glow
-                "
+								className={`${styles.heroDevText} text-orange font-roadrage uppercase  
+								lg:-mt-2 xmd:-mt-3 md:-mt-2 -mt-2 tracking-widest text-shadow-solid-2 drop-shadow-glow`}
 							>
 								Software<br></br>
-                Developer
+								Developer
 							</p>
 						</h1>
-						<p className={`${styles.heroSubText} mt-2 text-eerieBlack font-poppins uppercase font-black`}>
-							{/* Software Developer <br className="sm:block hidden" /> */}
+						<p
+							className={`${styles.heroWordsText} mt-3 font-poppins uppercase font-black`}
+						>
 							Delightful.<br></br>
-               Dynamic.<br></br>
-                Driven.
+							Dynamic.<br></br>
+							Driven.
 						</p>
 					</div>
 					<div
