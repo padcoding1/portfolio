@@ -11,9 +11,9 @@ const Navbar = () => {
 	return (
 		<nav
 			className={`${styles.paddingX} w-full flex items-center py-2 fixed 
-      top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}
+			md:top-0 md:bottom-auto bottom-0 z-20 bg-flashWhite md:opacity-[0.97] xxs:h-[12vh]`}
 		>
-			<div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+			<div className="w-full flex justify-between items-center max-w-7xl xl:max-w-full mx-auto xl:mx-[1rem]">
 				<Link
 					to="/"
 					className="flex items-center gap-2"
@@ -25,16 +25,16 @@ const Navbar = () => {
 					<img
 						src={logo}
 						alt="logo"
-						className="sm:w-[80px] sm:h-[80px] w-[50px] h-[50px] object-contain"
+						className="max-w-7xl sm:w-[90px] sm:h-[90px] md:md:w-[90px] md:h-[90px] w-[70px] h-[70px] object-contain"
 					/>
 				</Link>
-				<ul className="list-none hidden sm:flex flex-row gap-14 mt-2">
+				<ul className="list-none hidden md:flex flex-row md:gap-8 lg:gap-14 mt-2">
 					{navLinks.map((nav) => (
 						<li
 							key={nav.id}
 							className={`${
 								active === nav.title ? "text-french" : "text-eerieBlack"
-							} hover:text-taupe text-[21px] font-black font-mova 
+							} hover:text-taupe md:text-[24px] xmd:text-[30px] lg:text-[24px] font-black font-mova 
                 uppercase tracking-tighter cursor-pointer nav-links`}
 							onClick={() => setActive(nav.title)}
 						>
@@ -44,25 +44,19 @@ const Navbar = () => {
 				</ul>
 
 				{/* mobile */}
-				<div className="sm:hidden flex flex-1 w-screen justify-end items-center">
+				<div className="md:hidden flex flex-1 w-screen justify-end items-center">
 					{toggle ? (
+						<>
 						<div
-							className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
+							className={`p-6 bg-flashWhite opacity-[0.9] fixed 
+                bottom-[calc(68px+1rem)] right-0 w-full h-[45vh] z-10 menu ${
 							toggle ? "menu-open" : "menu-close"
 						}`}
 						>
-							<div className="flex justify-end">
-								<img
-									src={close}
-									alt="close"
-									className="w-[22px] h-[22px] object-contain cursor-pointer"
-									onClick={() => setToggle(!toggle)}
-								/>
-							</div>
+						
 							<ul
-								className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px]"
+								className="list-none flex flex-col mt-[0.4rem] 
+                items-start justify-end"
 							>
 								{navLinks.map((nav) => (
 									<li
@@ -70,9 +64,9 @@ const Navbar = () => {
 										key={nav.id}
 										className={`${
 											active === nav.title
-												? "text-french"
+												? "text-orange"
 												: "text-eerieBlack"
-										} text-[88px] font-bold font-arenq 
+										} text-[5vh] font-bold font-mova 
                       uppercase tracking-[1px] cursor-pointer`}
 										onClick={() => {
 											setToggle(!toggle);
@@ -83,12 +77,22 @@ const Navbar = () => {
 									</li>
 								))}
 							</ul>
+							
 						</div>
+					<div className="flex justify-end">
+						<img
+							src={close}
+							alt="close"
+							className="w-[22px] h-[22px] object-contain cursor-pointer mr-[15px]"
+							onClick={() => setToggle(!toggle)}
+						/>
+					</div>
+					</>
 					) : (
 						<img
 							src={menu}
 							alt="menu"
-							className="w-[34px] h-[34px] object-contain cursor-pointer"
+							className="sm:w-[62px] sm:h-[62px] w-[55x] h-[55px] object-contain cursor-pointer"
 							onClick={() => setToggle(!toggle)}
 						/>
 					)}

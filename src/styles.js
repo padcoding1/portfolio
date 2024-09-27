@@ -1,36 +1,36 @@
 const styles = {
 	innerWidth: "2xl:max-w-[1280px] w-full",
-	interWidth: "lg:w-[80%] w-[100%]",
+	innerWidth: "md:w-[80%] w-[100%]",
 
-	paddings: "sm:p-16 xs:p-8 px-6 py-12",
-	yPaddings: "sm:py-16 xs:py-8 py-12",
-	xPaddings: "sm:px-16 px-6",
-	topPaddings: "sm:pt-16 xs:pt-8 pt-12",
-	bottomPaddings: "sm:pb-16 xs:pb-8 pb-12",
+	paddings: "md:p-16 sm:p-8 px-6 py-12",
+	yPaddings: "md:py-16 sm:py-8 py-12",
+	xPaddings: "md:px-16 px-6",
+	topPaddings: "md:pt-16 sm:pt-8 pt-12",
+	bottomPaddings: "md:pb-16 sm:pb-8 pb-12",
 
 	flexCenter: "flex justify-center items-center",
 	flexStart: "flex justify-start items-start",
 	flexEnd: "flex justify-end",
 	navPadding: "pt-[98px]",
 
-	paddingX: "sm:px-16 px-6",
-	paddingY: "sm:py-16 py-6",
-	padding: "sm:px-16 px-6 sm:py-16 py-10",
+	paddingX: "px-5 xmd:px-[2rem] xl:",
+	paddingY: "md:py-16 py-6",
+	padding: "md:px-16 px-6 md:py-16 py-10",
 
 	heroHeadText:
-		"font-black text-eerieBlack lg:text-[100px] sm:text-[75px] xs:text-[60px] text-[50px] lg:leading-[80px] mt-2",
+		"font-black text-eerieBlack md:text-[100px] md:text-[75px] sm:text-[60px] text-[50px] md:leading-[80px] mt-2",
 	heroSubText:
-		"text-eerieBlack lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
+		"text-eerieBlack md:text-[30px] md:text-[26px] sm:text-[20px] text-[16px] md:leading-[40px]",
 	sectionHeadText:
-		"text-eerieBlack font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins",
-  sectionHeadTextSmall:
-		"text-eerieBlack font-black md:text-[40px] sm:text-[28px] xs:text-[20px] text-[10px] font-poppins",
+		"text-eerieBlack font-black md:text-[60px] md:text-[48px] sm:text-[40px] text-[30px] font-poppins",
+    sectionHeadTextmdall:
+		"text-eerieBlack font-black md:text-[40px] md:text-[28px] sm:text-[20px] text-[10px] font-poppins",
 	sectionHeadTextLight:
-		"text-timberWolf font-black md:text-[60px] sm:text-[48px] xs:text-[40px] text-[30px] font-poppins",
+		"text-timberWolf font-black md:text-[60px] md:text-[48px] sm:text-[40px] text-[30px] font-poppins",
 	sectionSubText:
-		"sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins",
+		"md:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins",
 	sectionSubTextLight:
-		"sm:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins",
+		"md:text-[18px] text-[16px] text-taupe uppercase tracking-wider font-semibold font-poppins",
 };
 
 export { styles };

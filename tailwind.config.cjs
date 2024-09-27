@@ -4,25 +4,25 @@ export default {
 	mode: "jit",
 	theme: {
 		extend: {
-      dropShadow: {
-          glow: [
-            "0 0px 40px rgba(255,255, 255, 0.55)",
-            "0 0px 60px rgba(255,255, 255, 0.35)",
-            "0 0px 100px rgba(255, 255,255, 0.2)"
-          ]
-        },
+			dropShadow: {
+				glow: [
+					"0 0px 40px rgba(255,255, 255, 0.55)",
+					"0 0px 60px rgba(255,255, 255, 0.35)",
+					"0 0px 100px rgba(255, 255,255, 0.2)",
+				],
+			},
 			textStrokeWidth: {
-        'default': '1px',
-        '2': '2px',
-      },
-      textStrokeColor: {
-        'black': '#000',
-      },
-      textShadow: {
-        'default': '2px 2px 4px rgba(0, 0, 0, 0.5)', // Default text shadow
-        'lg': '10px 10px 6px rgba(0, 0, 0, 1)', // Large text shadow
-        'xl': '20px 20px 6px rgba(0, 0, 0, 1)', // Large text shadow
-      },
+				default: "1px",
+				2: "2px",
+			},
+			textStrokeColor: {
+				black: "#000",
+			},
+			textShadow: {
+				default: "2px 2px 4px rgba(0, 0, 0, 0.5)", // Default text shadow
+				lg: "10px 10px 6px rgba(0, 0, 0, 1)", // Large text shadow
+				xl: "20px 20px 6px rgba(0, 0, 0, 1)", // Large text shadow
+			},
 			colors: {
 				primary: "#050816",
 				secondary: "#aaa6c3",
@@ -53,12 +53,12 @@ export default {
 				cardLight: "0px 19px 38px #eaeaec, 0px 15px 12px #eaeaec",
 			},
 			screens: {
-				xs: "450px",
-				sm: "640px",
-				md: "768px",
-				xmd: "900px",
-				lg: "1025px",
-				xl: "1280px",
+				xs: "460px",
+				sm: "564px",
+				md: "756px",
+				xmd: "992px",
+				lg: "1024px",
+				xl: "1200px",
 				"2xl": "1536px",
 				"3xl": "1800px",
 			},
@@ -82,45 +82,45 @@ export default {
 				poppins: ["Poppins", "sans-serif"],
 				roadrage: ["Road_Rage", "sans-serif"],
 				poppinsBlack: ["Poppins-Black", "sans-serif"],
-        poppinsBold: ["Poppins-Bold", "sans-serif"],
+				poppinsBold: ["Poppins-Bold", "sans-serif"],
 			},
 		},
 	},
 	plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        '.text-shadow': {
-          'text-shadow': '2px 2px 4px rgba(0, 0, 0, 0.5)',
-        },
-        '.text-shadow-lg': {
-          'text-shadow': '4px 4px 0px rgba(0, 0, 0, 0.5)',
-        },
-        '.text-shadow-xl': {
-          'text-shadow': '20px 20px 6px rgba(0, 0, 0, 1)',
-        },
-        '.text-shadow-solid': {
-          'text-shadow': '1px 6px 0px rgba(0, 0, 0, 1)',
-        },
-        '.text-shadow-solid-2': {
-          'text-shadow': '6px 6px 0px rgba(0, 0, 0, 1)',
-        },
-        '.text-shadow-none': {
-          'text-shadow': 'none',
-        },
-        '.text-stroke': {
-          '-webkit-text-stroke-width': '0.1px',
-          '-webkit-text-stroke-color': 'rgba(0, 0, 0, 0)',
-        },
-        '.text-stroke-2': {
-          '-webkit-text-stroke-width': '0.5px',
-          '-webkit-text-stroke-color': 'black',
-        },
-        '.text-stroke-3': {
-          '-webkit-text-stroke-width': '0.5px',
-          '-webkit-text-stroke-color': 'black',
-        },
-      };
-      addUtilities(newUtilities, ['responsive', 'hover']);
-    },
-  ],
+		function ({ addUtilities }) {
+			const newUtilities = {
+				".text-shadow": {
+					"text-shadow": "2px 2px 4px rgba(0, 0, 0, 0.5)",
+				},
+				".text-shadow-lg": {
+					"text-shadow": "4px 4px 0px rgba(0, 0, 0, 0.5)",
+				},
+				".text-shadow-xl": {
+					"text-shadow": "20px 20px 6px rgba(0, 0, 0, 1)",
+				},
+				".text-shadow-solid": {
+					"text-shadow": "1px 6px 0px rgba(0, 0, 0, 1)",
+				},
+				".text-shadow-solid-2": {
+					"text-shadow": "6px 6px 0px rgba(0, 0, 0, 1)",
+				},
+				".text-shadow-none": {
+					"text-shadow": "none",
+				},
+				".text-stroke": {
+					"-webkit-text-stroke-width": "0.1px",
+					"-webkit-text-stroke-color": "rgba(0, 0, 0, 0)",
+				},
+				".text-stroke-2": {
+					"-webkit-text-stroke-width": "0.5px",
+					"-webkit-text-stroke-color": "black",
+				},
+				".text-stroke-3": {
+					"-webkit-text-stroke-width": "0.5px",
+					"-webkit-text-stroke-color": "black",
+				},
+			};
+			addUtilities(newUtilities, ["responsive", "hover"]);
+		},
+	],
 };
