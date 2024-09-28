@@ -4,6 +4,12 @@ export default {
 	mode: "jit",
 	theme: {
 		extend: {
+			padding: {
+				'safe-top': 'env(safe-area-inset-top)',
+				'safe-right': 'env(safe-area-inset-right)',
+				'safe-bottom': 'env(safe-area-inset-bottom)',
+				'safe-left': 'env(safe-area-inset-left)',
+			  },
 			backgroundPosition: {
 				'right-shift': '30% 0%' // Shifted to the right
 			  },

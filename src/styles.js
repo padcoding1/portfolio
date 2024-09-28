@@ -11,7 +11,7 @@ const styles = {
 
 	mobileScreen: "min-h-[calc(100vh-(85px))] sm:min-h-[calc(100vh-(105px))] md:top-[106px]",
 
-	
+
 	flexCenter: "flex justify-center items-center",
 	flexStart: "flex justify-start items-start",
 	flexEnd: "flex justify-end",

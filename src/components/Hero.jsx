@@ -6,10 +6,8 @@ import { headshot, bwmap, worldmap } from "../assets";
 
 const Hero = () => {
 	return (
-		<div className={`${styles.mobileScreen} relative min-h-screen`}>
+		<div className={`${styles.mobileScreen} relative pt-safe-top pr-safe-right pb-safe-bottom pl-safe-left`}>
 
-{/* min-h-[calc(100vh-(85px))] 
-sm:min-h-[calc(100vh-(105px))] md:top-[106px] */}
 
 			{/*WORLD MAP (Black land, white water) */}
 			<div className="z-6 absolute top-0 left-0 w-[100%] h-[100%]">
