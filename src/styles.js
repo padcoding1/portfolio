@@ -9,7 +9,7 @@ const styles = {
 	bottomPaddings: "md:pb-16 sm:pb-8 pb-12",
 
 
-	mobileScreen: "min-h-[calc(100vh-(85px))] sm:min-h-[calc(100vh-(105px))] md:top-[106px]",
+	mobileScreen: "min-h-[calc(100vh-(130px))] sm:min-h-[calc(100vh-(105px))] md:top-[106px]",
 
 
 	flexCenter: "flex justify-center items-center",
