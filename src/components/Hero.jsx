@@ -6,9 +6,12 @@ import { headshot, bwmap, worldmap } from "../assets";
 
 const Hero = () => {
 	return (
-		<div className={`${styles.mobileScreen} relative min-h-[calc(100vh-(85px))] sm:min-h-[calc(100vh-(105px))] md:top-[106px]`}>
+		<div className={`${styles.mobileScreen} relative min-h-screen`}>
 
-			{/* White on Black World Map for Smallest Mobile */}
+{/* min-h-[calc(100vh-(85px))] 
+sm:min-h-[calc(100vh-(105px))] md:top-[106px] */}
+
+			{/*WORLD MAP (Black land, white water) */}
 			<div className="z-6 absolute top-0 left-0 w-[100%] h-[100%]">
 				<img
 					src={bwmap}
@@ -35,10 +38,12 @@ const Hero = () => {
 			<section
 				className="relative flex sm:flex-row flex-col mx-auto h-full overflow-hidden"
 			>
-				{/* bg-hero-mobile sm:bg-hero overflow-hidden */}
+				
 
+			{/* PHILIP DILLON/SOFTWARE DEVELOPER/WORDS */}
 				<div
-					className={`${styles.mobileScreen} z-9 md:pt-[5vh] lg:pt-[4vh] xl:pt-[3vh] pt-[5vh] 2xl:pl-[0vh] xl:pl-[8vh] pl-[5vw] xl:pr-[75vh] lg:pr-[60vh] pr-[20vh] max-w-7xl mx-auto flex flex-row 
+					className={`${styles.mobileScreen} z-9 md:pt-[5vh] lg:pt-[4vh] xl:pt-[3vh] pt-[5vh] 
+						2xl:pl-[0vh] xl:pl-[8vh] pl-[5vw] xl:pr-[75vh] lg:pr-[60vh] pr-[20vh] max-w-7xl mx-auto flex flex-row 
 						justify-start gap-3`}
 				> 
 					<div>
@@ -66,6 +71,8 @@ const Hero = () => {
 					<div></div>
 				</div>
 
+
+				{/* HEADSHOT PICTURE */}
 				<div>
 					<img
 						className="absolute z-10 right-[50%] transform translate-x-1/2 bottom-[0px] 
@@ -78,6 +85,8 @@ const Hero = () => {
 					/>
 				</div>
 
+
+				{/* SLIDER */}
 				<div
 					className="slider z-20 absolute lg:bottom-4 md:bottom-14 xs:bottom-6 bottom-10 w-full 
           flex justify-center items-center"
