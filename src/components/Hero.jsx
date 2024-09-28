@@ -6,7 +6,7 @@ import { headshot, bwmap, worldmap } from "../assets";
 
 const Hero = () => {
 	return (
-		<div className="relative h-[calc(100vh-(85px))] sm:h-[calc(100vh-(105px))] md:top-[106px]">
+		<div className="relative min-h-[calc(100vh-(85px))] sm:min-h-[calc(100vh-(105px))] md:top-[106px]">
 
 			{/* White on Black World Map for Smallest Mobile */}
 			<div className="z-6 absolute top-0 left-0 w-[100%] h-[100%]">
