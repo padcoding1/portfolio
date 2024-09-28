@@ -5,10 +5,10 @@ export default {
 	theme: {
 		extend: {
 			padding: {
-				'safe-top': 'env(safe-area-inset-top)',
-				'safe-right': 'env(safe-area-inset-right)',
-				'safe-bottom': 'env(safe-area-inset-bottom)',
-				'safe-left': 'env(safe-area-inset-left)',
+				'safe-top': 'env(safe-area-inset-top, 20px)',
+				'safe-right': 'env(safe-area-inset-right, 20px)',
+				'safe-bottom': 'env(safe-area-inset-bottom, 20px)',
+				'safe-left': 'env(safe-area-inset-left, 20px)',
 			  },
 			backgroundPosition: {
 				'right-shift': '30% 0%' // Shifted to the right
