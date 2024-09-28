@@ -8,6 +8,10 @@ const styles = {
 	topPaddings: "md:pt-16 sm:pt-8 pt-12",
 	bottomPaddings: "md:pb-16 sm:pb-8 pb-12",
 
+
+	mobileScreen: "min-h-[calc(100vh-(85px))] sm:min-h-[calc(100vh-(105px))] md:top-[106px]",
+
+	
 	flexCenter: "flex justify-center items-center",
 	flexStart: "flex justify-start items-start",
 	flexEnd: "flex justify-end",

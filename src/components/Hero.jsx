@@ -6,7 +6,7 @@ import { headshot, bwmap, worldmap } from "../assets";
 
 const Hero = () => {
 	return (
-		<div className="relative min-h-[calc(100vh-(85px))] sm:min-h-[calc(100vh-(105px))] md:top-[106px]">
+		<div className={`${styles.mobileScreen} relative min-h-[calc(100vh-(85px))] sm:min-h-[calc(100vh-(105px))] md:top-[106px]`}>
 
 			{/* White on Black World Map for Smallest Mobile */}
 			<div className="z-6 absolute top-0 left-0 w-[100%] h-[100%]">
@@ -38,7 +38,7 @@ const Hero = () => {
 				{/* bg-hero-mobile sm:bg-hero overflow-hidden */}
 
 				<div
-					className={`z-9 md:pt-[5vh] lg:pt-[4vh] xl:pt-[3vh] pt-[5vh] 2xl:pl-[0vh] xl:pl-[8vh] pl-[5vw] xl:pr-[75vh] lg:pr-[60vh] pr-[20vh] max-w-7xl mx-auto flex flex-row 
+					className={`${styles.mobileScreen} z-9 md:pt-[5vh] lg:pt-[4vh] xl:pt-[3vh] pt-[5vh] 2xl:pl-[0vh] xl:pl-[8vh] pl-[5vw] xl:pr-[75vh] lg:pr-[60vh] pr-[20vh] max-w-7xl mx-auto flex flex-row 
 						justify-start gap-3`}
 				> 
 					<div>
