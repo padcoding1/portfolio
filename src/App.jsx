@@ -12,10 +12,14 @@ import {
 const App = () => {
   return (
     <HashRouter>
-      <div className="relative z-0">
+      <div className="relative z-0 bg-flashWhite">
         <div>
+          <div className="z-100">
           <Navbar />
+          </div>
+          <div className="relative">
           <Hero />
+          </div>
         </div>
 
         <div className="bg-about bg-cover bg-center bg-no-repeat">

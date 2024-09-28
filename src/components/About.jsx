@@ -30,7 +30,10 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
 	return (
-		<div className="-mt-[8rem]">
+		<div className="">
+
+{/* -mt-[8rem] */}
+
 			<motion.div variants={textVariant()}>
 				<h2 className={styles.sectionHeadTextSmall}>Hi, I'm Philip!</h2>
 			</motion.div>
@@ -43,17 +46,17 @@ const About = () => {
 				quite like the rush of writing code, running it, and watching
 				everything fall perfectly into place—like solving a puzzle in real
 				time. <br></br>
-				<br></br>
+        <br></br>
 				Fueled by my background in IT operations, I’ve honed my
 				problem-solving skills to build cutting-edge applications. From
 				crafting sleek interfaces to rock-solid backends, I thrive on
-				turning ideas into impactful software. Coding isn’t just a job—it’s
-				my craft, and I’m always ready to dive into new projects and tools,
-				bringing energy and collaboration to every team.
+				turning ideas into impactful software. Coding isn’t just a job—it’s my craft, and I’m
+				always ready to dive into new projects and tools, bringing energy
+				and collaboration to every team.
 				<br></br>
-				<br></br>
-				Outside of coding, you’ll find me mountaineering, rock climbing,
-				weightlifting, learning Italian, or riding my motorcycle!
+        <br></br>
+        Outside of coding, you’ll find me mountaineering, rock
+				climbing, weightlifting, learning Italian, or riding my motorcycle!
 			</motion.p>
 
 			<div className="mt-10 flex flex-wrap gap-5">

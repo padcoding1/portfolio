@@ -11,9 +11,9 @@ const Navbar = () => {
 	return (
 		<nav
 			className={`${styles.paddingX} w-full flex items-center py-2 fixed 
-			md:top-0 md:bottom-auto bottom-0 z-20 bg-flashWhite md:opacity-[0.97] xxs:h-[12vh]`}
+			md:top-0 md:bottom-auto bottom-0 z-30 bg-flashWhite md:opacity-[0.92] xxs:h-[12vh]`}
 		>
-			<div className="w-full flex justify-between items-center max-w-7xl xl:max-w-full mx-auto xl:mx-[1rem]">
+			<div className="w-full flex justify-between items-center max-w-7xl xl:max-w-full mx-auto xl:mx-[1rem] px-[1.5rem]">
 				<Link
 					to="/"
 					className="flex items-center gap-2"
@@ -22,6 +22,7 @@ const Navbar = () => {
 						window.scrollTo(0, 0);
 					}}
 				>
+
 					<img
 						src={logo}
 						alt="logo"
@@ -49,7 +50,7 @@ const Navbar = () => {
 						<>
 						<div
 							className={`p-6 bg-flashWhite opacity-[0.9] fixed 
-                bottom-[calc(68px+1rem)] right-0 w-full h-[45vh] z-10 menu ${
+                bottom-[calc(68px+1rem)] right-0 w-full h-[45vh] menu ${
 							toggle ? "menu-open" : "menu-close"
 						}`}
 						>
@@ -92,7 +93,8 @@ const Navbar = () => {
 						<img
 							src={menu}
 							alt="menu"
-							className="sm:w-[62px] sm:h-[62px] w-[55x] h-[55px] object-contain cursor-pointer"
+							className="sm:w-[62px] sm:h-[62px] w-[55x] h-[55px] 
+							object-contain cursor-pointer"
 							onClick={() => setToggle(!toggle)}
 						/>
 					)}

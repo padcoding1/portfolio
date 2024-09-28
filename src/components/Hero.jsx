@@ -6,31 +6,41 @@ import { headshot, bwmap, worldmap } from "../assets";
 
 const Hero = () => {
 	return (
-		<>
-			<div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
+		<div className="relative h-[calc(100vh-(85px))] sm:h-[calc(100vh-(105px))] md:top-[106px]">
+
+			{/* White on Black World Map for Smallest Mobile */}
+			<div className="z-6 absolute top-0 left-0 w-[100%] h-[100%]">
 				<img
 					src={bwmap}
 					alt="world map"
 					className="w-full h-full sm:block hidden object-cover"
 				/>
 			</div>
-			<div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
+
+			{/* Black on White World Map
+			<div className="z-7 absolute top-0 left-0 w-[100%] h-[100%]">
 				<img
 					src={worldmap}
 					alt="world map"
-					className="w-full h-full sm:hidden block object-cover"
+					className="w-full h-full block object-cover"
 				/>
+				
+			</div> */}
+
+			{/* Gradient */}
+			<div className="absolute left-0 h-[100%] w-[100%] opacity-95 
+				bg-hero-mobile sm:bg-hero md:bg-hero-medium lg:bg-hero-large xl:bg-hero-extra-large overflow-hidden">
+
 			</div>
 			<section
-				className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
-        sm:bg-hero bg-hero-mobile overflow-hidden"
+				className="relative flex sm:flex-row flex-col mx-auto h-full overflow-hidden"
 			>
+				{/* bg-hero-mobile sm:bg-hero overflow-hidden */}
+
 				<div
-					className={`absolute inset-0 sm:top-[100px] top-[150px] 
-          lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
-          max-w-7xl mx-auto flex flex-row items-start
-          justify-between gap-3`}
-				>
+					className={`z-9 md:pt-[5vh] lg:pt-[4vh] xl:pt-[3vh] pt-[5vh] 2xl:pl-[0vh] xl:pl-[8vh] pl-[5vw] xl:pr-[75vh] lg:pr-[60vh] pr-[20vh] max-w-7xl mx-auto flex flex-row 
+						justify-start gap-3`}
+				> 
 					<div>
 						<h1
 							className={`${styles.heroNameText} font-poppins uppercase`}
@@ -52,16 +62,24 @@ const Hero = () => {
 							Driven.
 						</p>
 					</div>
-					<div
-						className="w-screen flex flex-col items-start 
-            justify-center sm:-ml-[3rem] xxs:mt-4"
-					></div>
 
 					<div></div>
 				</div>
 
+				<div>
+					<img
+						className="absolute z-10 right-[50%] transform translate-x-1/2 bottom-[0px] 
+            				h-[49vh] lg:right-[20%] xl:right-[25%] 2xl:right-[23%]
+							lg:h-[70vh] xl:h-[70vh] 2xl:h-[80vh]
+							lg:mr-[5vw] 2xl:mr-[8vw]
+							"
+						src={headshot}
+						alt="A profile picture of Philip Dillon"
+					/>
+				</div>
+
 				<div
-					className="absolute xs:bottom-10 bottom-32 w-full 
+					className="slider z-20 absolute lg:bottom-4 md:bottom-14 xs:bottom-6 bottom-10 w-full 
           flex justify-center items-center"
 				>
 					<a href="#about">
@@ -84,19 +102,8 @@ const Hero = () => {
 						</div>
 					</a>
 				</div>
-
-				{/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
-				<div>
-					<img
-						className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[65vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
-						src={headshot}
-						alt="A profile picture of Philip Dillon"
-					/>
-				</div>
 			</section>
-		</>
+		</div>
 	);
 };
 

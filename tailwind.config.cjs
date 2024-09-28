@@ -4,11 +4,14 @@ export default {
 	mode: "jit",
 	theme: {
 		extend: {
+			backgroundPosition: {
+				'right-shift': '30% 0%' // Shifted to the right
+			  },
 			dropShadow: {
 				glow: [
-					"0 0px 40px rgba(255,255, 255, 0.55)",
-					"0 0px 60px rgba(255,255, 255, 0.35)",
-					"0 0px 100px rgba(255, 255,255, 0.2)",
+					"0 0px 50px rgba(255,255, 255, 0.75)",
+					"0 0px 80px rgba(255,255, 255, 0.55)",
+					"0 0px 120px rgba(255, 255,255, 0.4)",
 				],
 			},
 			textStrokeWidth: {
@@ -68,9 +71,15 @@ export default {
 					"linear-gradient(135deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.2) 100%),url('/src/assets/backgrounds/white-abstract.png')",
 				experienceLight:
 					"linear-gradient(137deg, rgba(244,244,246,0.5) 60%, rgba(10,10,10,0.9) 60%)",
-				hero: "linear-gradient(135deg, rgba(244,244,246,0.8) 60%, rgba(10,10,10,0.95) 60%)",
+				hero: "linear-gradient(138deg, rgba(244,244,246,0.8) 62%, rgba(10,10,10,0.95) 62%)",
 				"hero-mobile":
-					"linear-gradient(137deg, rgba(244,244,246,0.8) 60%, rgba(10,10,10,1) 60%)",
+					"linear-gradient(137deg, rgba(244,244,246,0.8) 60%, rgba(10,10,10,0.95) 60%)",
+				"hero-medium":
+					"linear-gradient(130deg, rgba(244,244,246,0.8) 55%, rgba(10,10,10,0.94) 55%)",
+				"hero-large":
+					"linear-gradient(140deg, rgba(244,244,246,0.8) 59%, rgba(10,10,10,0.94) 59%)",
+				"hero-extra-large":
+					"linear-gradient(147deg, rgba(244,244,246,0.8) 59%, rgba(10,10,10,0.95) 59%)",
 				tech: "linear-gradient(165deg, rgba(20,20,20,0.8) 100%, rgba(109,109,116,0.8) 100%), url('/src/assets/backgrounds/nairobi.png')",
 			},
 			fontFamily: {
