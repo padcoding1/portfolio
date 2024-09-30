@@ -155,7 +155,7 @@ const Projects = () => {
 	const [active, setActive] = useState("");
 
 	return (
-		<div className="-mt-[8rem]">
+		<div className="-mt-5">
 			<motion.div variants={textVariant()}>
 				<p className={`${styles.sectionSubText} `}>Case Studies</p>
 				<h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
@@ -164,7 +164,7 @@ const Projects = () => {
 			<div className="w-full flex">
 				<motion.p
 					variants={fadeIn("", "", 0.1, 1)}
-					className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
+					className="mt-4 mb-2 pb-5 text-taupe text-[19px] max-w-3xl leading-[30px]"
 				>
 					Dive into my collection of projects! Here creativity meets code,
 					featuring eye-catching, responsive interfaces and efficient,

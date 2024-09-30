@@ -148,7 +148,7 @@ const technologies = [
     type: "database",
 	},
 	{
-		name: "Tailwind/Bootstrap",
+		name: "Tailwind & Bootstrap",
 		icon: tailwind,
     type: "framework",
 	},

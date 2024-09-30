@@ -9,7 +9,7 @@ const ServiceCard = ({ index, title, icon }) => {
 	return (
 		<motion.div
 			variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-			className="xs:w-[200px] w-full card-gradient p-[1px] rounded-[20px] shadow-card"
+			className="xs:min-w-[200px] md:w-[30%] card-gradient p-[1px] rounded-[20px] shadow-card"
 		>
 			<div
 				options={{
@@ -30,17 +30,17 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
 	return (
-		<div className="">
+		<div className="mb-16">
 
 {/* -mt-[8rem] */}
 
 			<motion.div variants={textVariant()}>
-				<h2 className={styles.sectionHeadTextSmall}>Hi, I'm Philip!</h2>
+				<h2 className={styles.sectionHeadTextSmall}>Hi, I'm <span className="text-orange text-stroke-2">Philip!</span></h2>
 			</motion.div>
 
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
-				className="mt-4 text-taupe text-[18px] max-w-3xl leading-[25px]"
+				className="px-4 mt-5 mb-5 text-taupe text-[22px] xs:text-[24px] sm:text-[24px] textmax-w-3xl leading-[27px] sm:leading-[32px]"
 			>
 				Whether it’s front-end, back-end, or full-stack, there’s nothing
 				quite like the rush of writing code, running it, and watching
@@ -59,7 +59,7 @@ const About = () => {
 				climbing, weightlifting, learning Italian, or riding my motorcycle!
 			</motion.p>
 
-			<div className="mt-10 flex flex-wrap gap-5">
+			<div className="mt-15 p-5 mb-15 flex flex-col md:flex-row md:flex-wrap gap-5 md:gap-0 justify-between">
 				{services.map((service, index) => (
 					<ServiceCard key={service.title} index={index} {...service} />
 				))}

@@ -22,15 +22,17 @@ const App = () => {
           </div>
         </div>
 
-        <div className="bg-about bg-cover bg-center bg-no-repeat">
+        <div className="bg-about bg-cover bg-center bg-no-repeat mb-20 md:mt-24">
           <About />
         </div>
 
-        <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">
+        <div className="bg-tech bg-cover bg-center bg-no-repeat px-5 pb-10 h-[135vh]">
           <Tech />
         </div>
 
+        <div className="bg-projects bg-cover bg-center bg-no-repeat px-5 pb-10 pt-14">
         <Projects />
+        </div>
 
         <div
           className="bg-experience bg-cover bg-center bg-no-repeat 
@@ -41,7 +43,7 @@ const App = () => {
             <Experience />
           </div>
         </div>
-        <div className="relative z-0">
+        <div className="relative z-0 mb-0 md:mt-16 md:pt-16">
           <Contact />
         </div>
       </div>

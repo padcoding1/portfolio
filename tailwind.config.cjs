@@ -87,6 +87,7 @@ export default {
 				"hero-extra-large":
 					"linear-gradient(147deg, rgba(244,244,246,0.8) 59%, rgba(10,10,10,0.95) 59%)",
 				tech: "linear-gradient(165deg, rgba(20,20,20,0.8) 100%, rgba(109,109,116,0.8) 100%), url('/src/assets/backgrounds/nairobi.png')",
+				projects: "linear-gradient(165deg, rgba(20,20,20,0.8) 100%, rgba(109,109,116,0.8) 100%), url('/src/assets/backgrounds/projects.jpg')",
 			},
 			fontFamily: {
 				arenq: ["Arenq"],
@@ -127,7 +128,7 @@ export default {
 					"-webkit-text-stroke-color": "rgba(0, 0, 0, 0)",
 				},
 				".text-stroke-2": {
-					"-webkit-text-stroke-width": "0.5px",
+					"-webkit-text-stroke-width": "1.2px",
 					"-webkit-text-stroke-color": "black",
 				},
 				".text-stroke-3": {
