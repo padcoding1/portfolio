@@ -14,7 +14,7 @@ const Hero = () => {
 				<img
 					src={bwmap}
 					alt="world map"
-					className="w-full h-full sm:block hidden object-cover"
+					className="w-full h-full block object-cover"
 				/>
 			</div>
 

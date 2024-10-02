@@ -5,6 +5,7 @@ import {
   Experience,
   Hero,
   Navbar,
+  SocialMediaWindow,
   Tech,
   Projects,
 } from './components';
@@ -14,11 +15,14 @@ const App = () => {
     <HashRouter>
       <div className="relative z-0 bg-flashWhite">
         <div>
-          <div className="z-100">
-          <Navbar />
+          <div className="z-50">
+            <Navbar />
+          </div>
+          <div className="z-50">
+           <SocialMediaWindow />
           </div>
           <div className="relative">
-          <Hero />
+            <Hero />
           </div>
         </div>
 
