@@ -46,6 +46,10 @@ import surelock from "./projects/surelock1.png";
 import growapp from "./projects/growapp.png";
 import catcollector from "./projects/catcollector.png";
 import peakpartner from "./projects/peakpartner.png";
+import language from "./tech/language.png";
+import framework from "./tech/framework.png";
+import database from "./tech/database.png";
+import utility from "./tech/utility.png";
 
 export {
 	bwmap,
@@ -90,4 +94,8 @@ export {
 	surelock,
 	growapp,
 	catcollector,
+	language,
+	framework,
+	database,
+	utility,
 };

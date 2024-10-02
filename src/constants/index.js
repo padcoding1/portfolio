@@ -1,3 +1,4 @@
+
 import {
 	fullstack,
 	frontend,
@@ -24,6 +25,10 @@ import {
 	github,
 	sql,
 	django,
+	language,
+	framework,
+	database,
+	utility,
 } from "../assets";
 
 export const navLinks = [
@@ -66,98 +71,123 @@ const services = [
 const techCategories = [
   {
     name: "Languages & Data Formats",
-    icon: reactjs,
+    icon: language,
     type: "language",
   },
   {
     name: "Frameworks & Libraries",
-    icon: reactjs,
+    icon: framework,
     type: "framework",
   },
   {
     name: "Databases, API, & Other",
-    icon: reactjs,
+    icon: database,
     type: "database",
 
   },
   {
     name: "Utilities & Tools",
-    icon: reactjs,
+    icon: utility,
     type: "utility",
   },
 ];
 const technologies = [
 	{
-		name: "JS/HTML/CSS",
-		icon: javascript,
-    type: "language",
+	  name: "JS/HTML/CSS",
+	  icon: javascript,
+	  type: "language",
+	  link: [
+		"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+		"https://developer.mozilla.org/en-US/docs/Web/HTML",
+		"https://developer.mozilla.org/en-US/docs/Web/CSS"
+	  ]
 	},
 	{
-		name: "Python",
-		icon: python,
-    type: "language",
+	  name: "Python",
+	  icon: python,
+	  type: "language",
+	  link: "https://www.python.org/"
 	},
 	{
-		name: "SQL",
-		icon: sql,
-    type: "language",
+	  name: "SQL",
+	  icon: sql,
+	  type: "language",
+	  link: "https://www.w3schools.com/sql/"
 	},
 	{
-		name: "JSON",
-		icon: json,
-    type: "language",
+	  name: "JSON",
+	  icon: json,
+	  type: "language",
+	  link: "https://www.json.org/"
 	},
 	{
-		name: "TypeScript",
-		icon: typescript,
-    type: "language",
+	  name: "TypeScript",
+	  icon: typescript,
+	  type: "language",
+	  link: "https://www.typescriptlang.org/"
 	},
 	{
-		name: "React",
-		icon: reactjs,
-    type: "framework",
+	  name: "React",
+	  icon: reactjs,
+	  type: "framework",
+	  link: "https://reactjs.org/"
 	},
 	{
-		name: "Node JS",
-		icon: nodejs,
-    type: "framework",
+	  name: "Node JS",
+	  icon: nodejs,
+	  type: "framework",
+	  link: "https://nodejs.org/"
 	},
 	{
-		name: "Express",
-		icon: express,
-    type: "framework",
+	  name: "Express",
+	  icon: express,
+	  type: "framework",
+	  link: "https://expressjs.com/"
 	},
 	{
-		name: "Django",
-		icon: django,
-    type: "framework",
+	  name: "Django",
+	  icon: django,
+	  type: "framework",
+	  link: "https://www.djangoproject.com/"
 	},
 	{
-		name: "Flask",
-		icon: flask,
-    type: "framework",
+	  name: "Flask",
+	  icon: flask,
+	  type: "framework",
+	  link: "https://flask.palletsprojects.com/"
 	},
 	{
-		name: "PostgreSQL",
-		icon: postgresql,
-    type: "database",
+	  name: "PostgreSQL",
+	  icon: postgresql,
+	  type: "database",
+	  link: "https://www.postgresql.org/"
 	},
 	{
-		name: "Mongo",
-		icon: mongo,
-    type: "database",
+	  name: "Mongo",
+	  icon: mongo,
+	  type: "database",
+	  link: "https://www.mongodb.com/"
 	},
 	{
-		name: "Tailwind & Bootstrap",
-		icon: tailwind,
-    type: "framework",
+	  name: "Tailwind & Bootstrap",
+	  icon: tailwind,
+	  type: "framework",
+	  link: [
+		"https://tailwindcss.com/",
+		"https://getbootstrap.com/"
+	  ]
 	},
 	{
-		name: "Git/GitHub",
-		icon: github,
-    type: "utility",
-	},
-];
+	  name: "Git/GitHub",
+	  icon: github,
+	  type: "utility",
+	  link: [
+		"https://git-scm.com/",
+		"https://github.com/"
+	  ]
+	}
+  ];
+  
 
 const experiences = [
 	{

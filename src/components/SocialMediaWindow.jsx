@@ -39,7 +39,7 @@ const SocialMediaWindow = () => {
       </motion.a>
     </div>
 
-      <div className="fixed z-50 bottom-[45%] md:bottom-0 right-4 items-left flex flex-col md:flex-row gap-2 bg-eerieBlack opacity-[1] md:m-3 p-2 rounded-lg shadow-lg gap-2">
+      <div className="fixed z-50 bottom-[45%] md:bottom-0 right-1 md:right-4 items-left flex flex-col md:flex-row gap-2 bg-eerieBlack opacity-[1] md:m-3 p-2 rounded-lg shadow-lg gap-2">
       <motion.a
         href="mailto:padcoding@gmail.com"
         className="text-orange"
@@ -47,7 +47,7 @@ const SocialMediaWindow = () => {
         // whileHover="pulse" // Apply the pulse animation on hover
         // variants={pulse}
       >
-        <FaEnvelope className="w-[35px] h-[35px] md:w-[26px] md:h-[26px] hover:text-flashWhite" />
+        <FaEnvelope className="w-[29px] h-[29px] md:w-[26px] md:h-[26px] hover:text-flashWhite" />
       </motion.a>
       <motion.a
         href="https://linkedin.com/in/padcoding"
@@ -58,7 +58,7 @@ const SocialMediaWindow = () => {
         // whileHover="pulse" // Apply the pulse animation on hover
         // variants={pulse}
       >
-        <FaLinkedin className="w-[35px] h-[35px] md:w-[26px] md:h-[26px] hover:text-flashWhite" />
+        <FaLinkedin className="w-[29px] h-[29px] md:w-[26px] md:h-[26px] hover:text-flashWhite" />
       </motion.a>
       <motion.a
         href="https://github.com/padcoding1"
@@ -69,7 +69,7 @@ const SocialMediaWindow = () => {
         // whileHover="pulse" // Apply the pulse animation on hover
         // variants={pulse}
       >
-        <FaGithub className="w-[35px] h-[35px] md:w-[26px] md:h-[26px] hover:text-flashWhite" />
+        <FaGithub className="w-[29px] h-[29px] md:w-[26px] md:h-[26px] hover:text-flashWhite" />
       </motion.a>
       <motion.a
         href="https://instagram.com/philofthefuture1000"
@@ -80,7 +80,7 @@ const SocialMediaWindow = () => {
         // whileHover="pulse" // Apply the pulse animation on hover
         // variants={pulse}
       >
-        <FaInstagram className="w-[35px] h-[35px] md:w-[26px] md:h-[26px] hover:text-flashWhite" />
+        <FaInstagram className="w-[29px] h-[29px] md:w-[26px] md:h-[26px] hover:text-flashWhite" />
       
       {/* <div className="block md:hidden fixed z-50 bottom-[25%] md:bottom-24 right-4 items-left flex flex-col md:flex-row gap-2 bg-eerieBlack opacity-[1] md:m-3 p-2 rounded-lg shadow-lg gap-2">
        
