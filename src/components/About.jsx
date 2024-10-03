@@ -4,8 +4,10 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { useTheme } from '../ThemeContext'; // Import useTheme
 
 const ServiceCard = ({ index, title, icon }) => {
+	const { theme } = useTheme(); // Use the theme context
 	return (
 		<motion.div
 			variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
@@ -20,7 +22,7 @@ const ServiceCard = ({ index, title, icon }) => {
 				className="bg-jetLight rounded-[20px] py-5 px-1 min-h-[200px] flex justify-evenly items-center flex-col"
 			>
 				<img src={icon} alt={title} className="w-16 h-16 object-contain" />
-				<h3 className="text-orange text-[18px] font-bold text-center">
+				<h3 style={{ color:theme }} className="text-[18px] font-bold text-center">
 					{title}
 				</h3>
 			</div>
@@ -29,13 +31,16 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
+
+	const { theme } = useTheme(); // Use the theme context
+	
 	return (
 		<div className="mb-16">
 
 {/* -mt-[8rem] */}
 
 			<motion.div variants={textVariant()}>
-				<h2 className={styles.sectionHeadTextSmall}>Hi, I'm <span className="text-orange text-stroke-2">Philip!</span></h2>
+				<h2 className={styles.sectionHeadTextSmall}>Hi, I'm <span className="text-stroke-2" style={{ color:theme }}>Philip!</span></h2>
 			</motion.div>
 
 			<motion.p

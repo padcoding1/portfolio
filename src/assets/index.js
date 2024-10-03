@@ -4,7 +4,7 @@ import whiteabstract from "./backgrounds/white-abstract.png";
 import worldmap from "./backgrounds/world-map.png";
 
 import logo from "./logo/logo-black.png";
-
+import logoShadow from "./logo/logo-shadow.png";
 import headshot from "./personal/headshot.png";
 
 import fullstack from "./icons/fullstack.png";
@@ -57,6 +57,7 @@ export {
 	whiteabstract,
 	worldmap,
 	logo,
+	logoShadow,
 	headshot,
 	fullstack,
 	backend,

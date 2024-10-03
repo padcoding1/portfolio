@@ -9,6 +9,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
+import { useTheme } from '../ThemeContext'; // Import useTheme
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -52,6 +53,7 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+  const { theme } = useTheme(); // Use the theme context
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -63,13 +65,14 @@ const Experience = () => {
         </h2>
         <div className="flex justify-center items-center mt-10">
         <button
+              
               className="live-demo flex justify-between 
               sm:text-[18px] text-[14px] text-timberWolf 
               font-bold font-beckman items-center py-5 pl-3 pr-3 
               whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] 
               w-[125px] h-[46px] rounded-[10px] bg-jetLight 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-orange transition duration-[0.2s] 
+               transition duration-[0.2s] 
               ease-in-out"
               onClick={() =>
                 window.open(
@@ -77,12 +80,14 @@ const Experience = () => {
                   '_blank'
                 )
               }
-              onMouseOver={() => {
+              onMouseOver={(e) => {
+                e.currentTarget.style.color = theme;
                 document
                   .querySelector('.download-btn')
                   .setAttribute('src', downloadHover);
               }}
-              onMouseOut={() => {
+              onMouseOut={(e) => {
+                e.currentTarget.style.color = '';
                 document
                   .querySelector('.download-btn')
                   .setAttribute('src', download);

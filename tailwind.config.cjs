@@ -56,6 +56,11 @@ export default {
 				eerieBlack: "#1f1f1f",
 				onyx: "#5b5b5b",
 				orange: "#ffb400",
+				electricBlue: "#0080ff",
+				lizzPurple: "#aa00ff",
+				wildRed: "#ff004c",
+				neonGreen: "#1eff1e"
+
 			},
 			boxShadow: {
 				card: "0px 35px 120px -15px #1f1f1f",

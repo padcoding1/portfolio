@@ -5,8 +5,10 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
+import { useTheme } from '../ThemeContext'; // Import useTheme
 
 const Contact = () => {
+  const { theme } = useTheme(); // Use the theme context
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -68,11 +70,11 @@ const Contact = () => {
         className="flex-[0.75] xl:flex-[1.75] bg-jet p-8 rounded-2xl">
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadTextLight}>Contact.</h3>
-        <p><a href="mailto:padcoding@gmail.com" className="text-orange">
+        <p style={{ color:theme }} ><a href="mailto:padcoding@gmail.com" className="" >
     padcoding@gmail.com
   </a>
   </p>
-  <p><a href="linkedin.com/in/padcoding" className="text-orange">
+  <p style={{ color:theme }} ><a href="linkedin.com/in/padcoding" className="">
     linkedin.com/in/padcoding
   </a>
   </p>

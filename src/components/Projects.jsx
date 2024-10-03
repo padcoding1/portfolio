@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { githubButton, githubHover, heroku, herokuHover } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant, staggerContainer } from "../utils/motion";
+import { useTheme } from '../ThemeContext'; // Import useTheme
 
 const ProjectCard = ({
 	id,
@@ -90,15 +91,17 @@ const ProjectCard = ({
               whitespace-nowrap gap-1 sm:w-[143px] sm:h-[50px] 
               w-[125px] h-[46px] rounded-[10px] glassmorphism 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-orange transition duration-[0.2s] 
+            transition duration-[0.2s] 
               ease-in-out"
 							onClick={() => window.open(demo, "_blank")}
-							onMouseOver={() => {
+							onMouseOver={(e) => {
+								e.currentTarget.style.color = theme;
 								document
 									.querySelector(".btn-demo")
 									.setAttribute("src", herokuHover);
 							}}
-							onMouseOut={() => {
+							onMouseOut={(e) => {
+								e.currentTarget.style.color = "";
 								document
 									.querySelector(".btn-demo")
 									.setAttribute("src", heroku);
@@ -121,15 +124,17 @@ const ProjectCard = ({
               whitespace-nowrap gap-1 sm:w-[143px] sm:h-[50px] 
               w-[125px] h-[46px] rounded-[10px] glassmorphism 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-orange transition duration-[0.2s] 
+              transition duration-[0.2s] 
               ease-in-out"
 							onClick={() => window.open(repo, "_blank")}
-							onMouseOver={() => {
+							onMouseOver={(e) => {
+								e.currentTarget.style.color = theme;
 								document
 									.querySelector(".btn-github")
 									.setAttribute("src", githubHover);
 							}}
-							onMouseOut={() => {
+							onMouseOut={(e) => {
+								e.currentTarget.style.color = "";
 								document
 									.querySelector(".btn-github")
 									.setAttribute("src", githubButton);
@@ -152,6 +157,7 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
+	const { theme } = useTheme(); // Use the theme context
 	const [active, setActive] = useState("");
 
 	return (
