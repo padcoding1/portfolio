@@ -1,4 +1,3 @@
-
 import {
 	fullstack,
 	frontend,
@@ -36,15 +35,15 @@ export const navLinks = [
 		id: "about",
 		title: "About",
 	},
-  {
-    id: "tech",
-    title: "Tech",
-  },
+	{
+		id: "tech",
+		title: "Tech",
+	},
 	{
 		id: "projects",
 		title: "Projects",
 	},
-  {
+	{
 		id: "experience",
 		title: "Experience",
 	},
@@ -69,125 +68,117 @@ const services = [
 	},
 ];
 const techCategories = [
-  {
-    name: "Languages & Data Formats",
-    icon: language,
-    type: "language",
-  },
-  {
-    name: "Frameworks & Libraries",
-    icon: framework,
-    type: "framework",
-  },
-  {
-    name: "Databases, API, & Other",
-    icon: database,
-    type: "database",
-
-  },
-  {
-    name: "Utilities & Tools",
-    icon: utility,
-    type: "utility",
-  },
+	{
+		name: "Languages & Data Formats",
+		icon: language,
+		type: "language",
+	},
+	{
+		name: "Frameworks & Libraries",
+		icon: framework,
+		type: "framework",
+	},
+	{
+		name: "Databases, API, & Other",
+		icon: database,
+		type: "database",
+	},
+	{
+		name: "Utilities & Tools",
+		icon: utility,
+		type: "utility",
+	},
 ];
 const technologies = [
 	{
-	  name: "JS/HTML/CSS",
-	  icon: javascript,
-	  type: "language",
-	  link: [
-		"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-		"https://developer.mozilla.org/en-US/docs/Web/HTML",
-		"https://developer.mozilla.org/en-US/docs/Web/CSS"
-	  ]
+		name: "JS/HTML/CSS",
+		icon: javascript,
+		type: "language",
+		link: [
+			"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+			"https://developer.mozilla.org/en-US/docs/Web/HTML",
+			"https://developer.mozilla.org/en-US/docs/Web/CSS",
+		],
 	},
 	{
-	  name: "Python",
-	  icon: python,
-	  type: "language",
-	  link: "https://www.python.org/"
+		name: "Python",
+		icon: python,
+		type: "language",
+		link: "https://www.python.org/",
 	},
 	{
-	  name: "SQL",
-	  icon: sql,
-	  type: "language",
-	  link: "https://www.w3schools.com/sql/"
+		name: "SQL",
+		icon: sql,
+		type: "language",
+		link: "https://www.w3schools.com/sql/",
 	},
 	{
-	  name: "JSON",
-	  icon: json,
-	  type: "language",
-	  link: "https://www.json.org/"
+		name: "JSON",
+		icon: json,
+		type: "language",
+		link: "https://www.json.org/",
 	},
 	{
-	  name: "TypeScript",
-	  icon: typescript,
-	  type: "language",
-	  link: "https://www.typescriptlang.org/"
+		name: "TypeScript",
+		icon: typescript,
+		type: "language",
+		link: "https://www.typescriptlang.org/",
 	},
 	{
-	  name: "React",
-	  icon: reactjs,
-	  type: "framework",
-	  link: "https://reactjs.org/"
+		name: "React",
+		icon: reactjs,
+		type: "framework",
+		link: "https://reactjs.org/",
 	},
 	{
-	  name: "Node JS",
-	  icon: nodejs,
-	  type: "framework",
-	  link: "https://nodejs.org/"
+		name: "Node JS",
+		icon: nodejs,
+		type: "framework",
+		link: "https://nodejs.org/",
 	},
 	{
-	  name: "Express",
-	  icon: express,
-	  type: "framework",
-	  link: "https://expressjs.com/"
+		name: "Express",
+		icon: express,
+		type: "framework",
+		link: "https://expressjs.com/",
 	},
 	{
-	  name: "Django",
-	  icon: django,
-	  type: "framework",
-	  link: "https://www.djangoproject.com/"
+		name: "Django",
+		icon: django,
+		type: "framework",
+		link: "https://www.djangoproject.com/",
 	},
 	{
-	  name: "Flask",
-	  icon: flask,
-	  type: "framework",
-	  link: "https://flask.palletsprojects.com/"
+		name: "Flask",
+		icon: flask,
+		type: "framework",
+		link: "https://flask.palletsprojects.com/",
 	},
 	{
-	  name: "PostgreSQL",
-	  icon: postgresql,
-	  type: "database",
-	  link: "https://www.postgresql.org/"
+		name: "PostgreSQL",
+		icon: postgresql,
+		type: "database",
+		link: "https://www.postgresql.org/",
 	},
 	{
-	  name: "Mongo",
-	  icon: mongo,
-	  type: "database",
-	  link: "https://www.mongodb.com/"
+		name: "Mongo",
+		icon: mongo,
+		type: "database",
+		link: "https://www.mongodb.com/",
 	},
 	{
-	  name: "Tailwind & Bootstrap",
-	  icon: tailwind,
-	  type: "framework",
-	  link: [
-		"https://tailwindcss.com/",
-		"https://getbootstrap.com/"
-	  ]
+		name: "Tailwind & Bootstrap",
+		icon: tailwind,
+		type: "framework",
+		link: ["https://tailwindcss.com/", "https://getbootstrap.com/"],
 	},
 	{
-	  name: "Git/GitHub",
-	  icon: github,
-	  type: "utility",
-	  link: [
-		"https://git-scm.com/",
-		"https://github.com/"
-	  ]
-	}
-  ];
-  
+		name: "Git/GitHub",
+		icon: github,
+		type: "utility",
+		link: ["https://git-scm.com/", "https://github.com/"],
+	},
+];
 
 const experiences = [
 	{
@@ -232,7 +223,7 @@ const projects = [
 				color: "blue-text-gradient",
 			},
 			{
-				name: "mongodb",
+				name: "postgresql",
 				color: "green-text-gradient",
 			},
 			{
@@ -242,7 +233,7 @@ const projects = [
 		],
 		image: surelock,
 		repo: "https://github.com/padcoding1/surelock-password-app",
-		demo: "http://localhost:5173/#projects",
+		demo: "https://surelock-password-app-fcf68c8b901a.herokuapp.com",
 	},
 	{
 		id: "project-2",
